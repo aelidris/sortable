@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Superhero Tracker</h1>
+    
+    <!-- Search Bar -->
+    <input type="text" id="search" placeholder="Search by name...">
+
+    <!-- Page Size Selector -->
+    <label for="pageSize">Page Size:</label>
+    <select id="pageSize">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="all">All</option>
+    </select>
+
+    <!-- Table to Display Superheroes -->
+    <table id="heroTable">
+        <thead>
+            <tr>
+                <th>Icon</th>
+                <th>Name</th>
+                <th>Full Name</th>
+                <th>Powerstats</th>
+                <th>Race</th>
+                <th>Gender</th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th>Place of Birth</th>
+                <th>Alignment</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Pagination Controls -->
+    <div id="pagination"></div>
+
+    <script src="./sortable.js"></script>
+</body>
+</html>
